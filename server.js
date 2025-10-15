@@ -18,6 +18,7 @@ const storyRoutes = require('./routes/stories');
 const activityRoutes = require('./routes/activities');
 const voiceRoutes = require('./routes/voice');
 const aiRoutes = require('./routes/ai');
+const chatRoutes = require('./routes/chat');
 // after other requires
 const transcribeRoute = require('./routes/transcribe');
 
@@ -103,6 +104,7 @@ app.use('/api/voice', voiceRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/planner', plannerRoutes);
 app.use('/api/transcribe', transcribeRoute);
+app.use('/api/chat', chatRoutes);
 
 
 // ------------------- Error Handling -------------------
